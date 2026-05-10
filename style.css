@@ -22,6 +22,74 @@ html {
 
 }
 
+.heading {
+    font-size: 4rem;
+    color: var(--pink);
+    text-align: center;
+    padding: 0 1rem;
+    padding-top: 6 rem;
+    letter-spacing: 0.2rem;
+    font-weight: 500
+    ;
+}
+
+.title {
+    padding: 0 1rem;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 400;
+    color: #aaa;
+
+}
+
+.about .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.about .row .image img{
+    height: 70vh;
+    width: 50vw;
+
+}
+
+.about .row .content {
+    padding-left: 5rem;
+}
+
+.about .row .content h3 {
+    color: var(--pink);
+    font-size: 4rem;
+    text-transform:capitalize;
+}
+
+.about .row .content p {
+    color: #999;
+    font-size: 1.6rem;
+    padding: 1rem 0;
+}
+
+.about .row .content button {
+
+    background-color: var(--violet);
+    color: #fff;
+    font-size: 2rem;
+    margin: 1rem;
+    padding: .7rem 3rem;
+    border-radius: 2rem;
+    border: none;
+    box-shadow: 0 0.3rem 0.5rem rgba(0,0,0, 0.5);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+
+.about .row .content button:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.3);
+}
 /* body {
     background-color: #333;
     height: 3000px;
@@ -45,7 +113,7 @@ header {
 }
 
 .header-active {
-    top:0;
+    margin-top:0;
     width: 100%;
     border-radius:0 ;
     box-shadow: 0 0.1rem 0.3rem rgba(0,0,0, 0.3);
@@ -158,12 +226,11 @@ header .fa-times {
 
 }
 
+
 .home .content button:hover {
-    transform: scale(1.08);
-    box-shadow: 0 0.3rem 0.5rem rgba(213, 200, 200, 0.5);
+    transform: translateY(-6px) scale(1.06);
+    box-shadow: 0 1rem 2rem rgba(213, 200, 200, 0.4);
     letter-spacing: 0.2rem;
-
-
 }
 
 .home .box-container {
@@ -184,7 +251,7 @@ header .fa-times {
     height: 20rem;
     border-radius: 1rem;
     box-shadow: 0 0.3rem .5rem rgba(0,0,0, 0.5);
-    margin: 1rem;
+    margin: 2rem;
     cursor: pointer;
     transition: 0.4s;
 }
@@ -207,10 +274,17 @@ header .fa-times {
     transition: 0.2s;
 }
 
+.home .box-container .box i:hover {
+    background: var(--pink);
+}
+
 .home .box-container .box h3 {
     font-size: 2rem;
     color: var(--pink);
 
+}
+.home .box-container .box h3:hover {
+    color: var(--violet);
 }
 
 .home .box-container .box p {
@@ -224,7 +298,7 @@ header .fa-times {
 .home::before {
     content: '';
     position: absolute;
-    bottom: -25%;
+    bottom: -30%;
     left: 50%;
     transform: translateX(-50%); 
     border-top:  70vh solid #fff;
@@ -277,6 +351,13 @@ header .fa-times {
         opacity: 1;
     }
 
+    header .content p{
+        padding: 1.5rem 2rem;
+    }
+
+    .home::before {
+    display: none;
+    }
 
 }
 
